@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.block {
+  padding: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 75vh;
+  min-width: 60vw;
+}
+.game-container {
+  padding: 3rem;
+  width: 50%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "comforter brush", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.bl {
+  border-bottom: white 5px solid;
+}
+.tl {
+  border-top: white 5px solid;
+}
+.ll {
+  border-left: white 5px solid;
+}
+.rl {
+  border-right: white 5px solid;
+}
+
+.status-container {
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.status-container h1 {
+  font-family: "Pacifico", sans-serif;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: red;
+}
+.status-container p {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.179);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  font-family: "ubuntu", sans-serif;
+  font-size: 2rem;
+}
+.wins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+.wins img {
+  width: 150px;
+  height: 150px;
+}
+.wins h3 {
+  padding: 0.75rem;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2rem;
+  color: rgba(219, 174, 69, 0.813);
+  text-align: center;
+  font-weight: lighter;
+  background: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.393);
+}
+
+@media (max-width: 1150px) {
+  .game-container {
+    height: 200px;
+    width: 200px;
+    padding: 2rem;
+  }
+  .block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .status-container h1 {
+    font-size: 2rem;
+  }
+  .status-container p {
+    font-size: 1rem;
+  }
+  .wins h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .block {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (max-width: 430px) {
+  .game-container {
+    height: fit-content;
+    width: 175px;
+  }
+  .status-container h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
