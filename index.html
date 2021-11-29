@@ -13,29 +13,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Tik Tok Toe</title>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
     <main>
       <div class="block">
         <div class="game-container" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="box rl bl">X</div>
-          <div class="box bl">X</div>
-          <div class="box ll bl">X</div>
-          <div class="box rl">X</div>
-          <div class="box">X</div>
-          <div class="box ll">X</div>
-          <div class="box tl rl">X</div>
-          <div class="box tl">X</div>
-          <div class="box ll tl">X</div>
+          <div class="box rl bl"></div>
+          <div class="box bl"></div>
+          <div class="box ll bl"></div>
+          <div class="box rl"></div>
+          <div class="box"></div>
+          <div class="box ll"></div>
+          <div class="box tl rl"></div>
+          <div class="box tl"></div>
+          <div class="box ll tl"></div>
         </div>
         <div class="status-container">
-          <h1 data-aos="flip-right" data-aos-duration="800">Tik Tak Toe</h1>
-          <br />
-          <p>X's turn</p>
-          <div class="wins" data-aos="flip-down" data-aos-duration="400">
+          <h1 data-aos="flip-right" data-aos-duration="800">Tik Tac Toe</h1>
+          <div class="turn">X's turn</div>
+          <div class="btn">Reset</div>
+          <div class="wins" data-aos="flip-down" data-aos-duration="800">
             <img src="./trophy.png" />
-            <h3 data-aos="zoom-in" data-aos-duration="400">X won!!</h3>
+            <h3 data-aos="zoom-in" data-aos-duration="1000" class="winningLine">
+              <!-- X won!! -->
+            </h3>
           </div>
         </div>
       </div>
@@ -44,5 +46,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./index.js"></script>
   </body>
 </html>
